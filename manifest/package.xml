@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Object -->
+    <types>
+        <members>Intake__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Screen Flow -->
+    <types>
+        <members>Intake_Form_Flow</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Record Trigger Flow -->
+    <types>
+       
+    <members>Intake_Auto_Process_Flow</members>
+    <name>Flow</name>
+
+    </types>
+
+    <!-- Layout -->
+    <types>
+        <members>Intake__c-Intake Layout</members>
+        <name>Layout</name>
+    </types>
+
+    <version>60.0</version>
+</Package>

@@ -1,23 +1,42 @@
-<<<<<<< HEAD
-# Salesforce DX Project: Next Steps
+🚀 Intake360 – Salesforce Intake Automation System
+📌 Overview
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Intake360 is a Salesforce-based intake management system built using Experience Cloud, Flow Automation, and Custom Objects.
+It enables users to submit structured intake requests through a portal, automatically process them, and update status using backend automation.
 
-## How Do You Plan to Deploy Your Changes?
+🧩 Problem Statement
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Organizations often handle intake requests manually via emails or spreadsheets, leading to:
 
-## Configure Your Salesforce DX Project
+Delays in processing
+Lack of visibility
+No standardized intake format
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Intake360 solves this by providing a centralized digital intake portal with automation.
 
-## Read All About It
+⚙️ Architecture
+1. Experience Cloud (UI Layer)
+Public portal built using Experience Builder
+Intake form embedded using Screen Flow
+2. Screen Flow (User Input)
+Collects intake details from users
+Creates Intake records in Salesforce
+3. Record-Triggered Flow (Automation)
+Automatically updates Status field to “New”
+Handles backend processing logic
+4. Custom Object
+Intake__c stores all intake records
+🔄 Process Flow
+User submits intake form via Experience Cloud
+Screen Flow captures input and creates record
+Record-triggered Flow runs automatically
+Status is updated to "New"
+Record becomes available for internal processing
+🛠️ Tech Stack
+Salesforce Lightning Platform
+Flow Builder (Screen + Record-triggered Flows)
+Experience Cloud
+Git & GitHub
+📸 Demo
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
-=======
-# agentforce-intake360
-intake 360 - intake manager that takes client details  generates a pdf's accordingly. 
->>>>>>> c53fbd2cd10493f7b94ed2425bb06be42709396f
+👉 Add your video link here (Loom / YouTube / Google Drive)
